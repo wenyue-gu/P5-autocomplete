@@ -43,7 +43,7 @@ public class HashListAutocomplete implements Autocompletor{
                 for (int k = 0; k <= ke; k++) {
                     key=t.substring(0, k);
                     List<Term> temp = new ArrayList<>();
-                    if (weights[i] > 0) {
+                    if (weights[i] >= 0) {
                          if(myMap.containsKey(key)) {
                             temp = myMap.get(key);
                             temp.add(new Term(t, weights[i]));
