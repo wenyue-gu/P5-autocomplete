@@ -38,7 +38,7 @@ public class HashListAutocomplete implements Autocompletor{
                     ke = MAX_PREFIX+1;
                 }
                 else{
-                    ke = t.length()
+                    ke = t.length();
                 }
                 for (int k = 0; k <= ke; k++) {
                     key=t.substring(0, k);
