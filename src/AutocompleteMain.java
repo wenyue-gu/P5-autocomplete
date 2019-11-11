@@ -1,6 +1,5 @@
+import javax.swing.*;
 import java.io.File;
-import javax.swing.JFileChooser;
-import javax.swing.SwingUtilities;
 
 /**
  * Main class for the Autocomplete program.
@@ -17,9 +16,9 @@ public class AutocompleteMain {
 	
 	/* Modify name of Autocompletor implementation as necessary */
 	
-	final static String AUTOCOMPLETOR_CLASS_NAME = BRUTE_AUTOCOMPLETE;
+	//final static String AUTOCOMPLETOR_CLASS_NAME = BRUTE_AUTOCOMPLETE;
 	//final static String AUTOCOMPLETOR_CLASS_NAME = BINARY_SEARCH_AUTOCOMPLETE;
-	//final static String AUTOCOMPLETOR_CLASS_NAME = HASHLIST_AUTOCOMPLETE;
+	final static String AUTOCOMPLETOR_CLASS_NAME = HASHLIST_AUTOCOMPLETE;
 	
 	public static void main(String[] args) {
 		final int K = 10;
