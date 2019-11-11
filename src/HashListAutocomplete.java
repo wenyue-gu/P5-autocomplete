@@ -13,7 +13,7 @@ public class HashListAutocomplete implements Autocompletor{
             return list;
         }
         else{
-            return null;
+            return new ArrayList<>();
         }
     }
 

@@ -111,7 +111,7 @@ public class BinarySearchAutocomplete implements Autocompletor {
 
 		// write code here
 		if(k==0){
-			return null;
+			return new ArrayList<>();
 		}
 
 		PriorityQueue<Term> pq =
