@@ -33,7 +33,14 @@ public class HashListAutocomplete implements Autocompletor{
             String t = terms[i];
             if(t!=null) {
                 String key;
-                for (int k = 0; k <= Math.min(MAX_PREFIX, t.length()); k++) {
+                int ke;
+                if(MAX_PREFIX<t.length()){
+                    ke = MAX_PREFIX+1;
+                }
+                else{
+                    ke = t.length()
+                }
+                for (int k = 0; k <= ke; k++) {
                     key=t.substring(0, k);
                     List<Term> temp = new ArrayList<>();
                     if (weights[i] > 0) {
