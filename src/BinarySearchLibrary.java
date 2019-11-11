@@ -90,7 +90,7 @@ public class BinarySearchLibrary {
 		
 		// target in [low,high)
 		// TODO: write  method
-		if(high<0){
+		if(high<=0){
 			return -1;
 		}
 		int mid;

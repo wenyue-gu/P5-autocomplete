@@ -110,6 +110,9 @@ public class BinarySearchAutocomplete implements Autocompletor {
 		}
 
 		// write code here
+		if(k==0){
+			return null;
+		}
 
 		PriorityQueue<Term> pq =
 				new PriorityQueue<Term>(Comparator.comparing(Term::getWeight));

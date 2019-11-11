@@ -33,7 +33,7 @@ public class HashListAutocomplete implements Autocompletor{
             String t = terms[i];
             if(t!=null) {
                 String key;
-                for (int k = 1; k <= Math.min(MAX_PREFIX, t.length()); k++) {
+                for (int k = 0; k <= Math.min(MAX_PREFIX, t.length()); k++) {
                     key=t.substring(0, k);
                     List<Term> temp = new ArrayList<>();
                     if (weights[i] > 0) {
@@ -70,8 +70,7 @@ public class HashListAutocomplete implements Autocompletor{
                     mySize += BYTES_PER_DOUBLE +
                             BYTES_PER_CHAR * t.getWord().length();
                 }
-                mySize+=BYTES_PER_DOUBLE +
-                        BYTES_PER_CHAR * key.length();
+                mySize+= BYTES_PER_CHAR * key.length();
             }
         }
         return mySize;
