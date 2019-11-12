@@ -30,6 +30,7 @@ public class BruteAutocomplete implements Autocompletor {
 		initialize(terms,weights);
 	}
 
+
 	@Override
 	public List<Term> topMatches(String prefix, int k) {
 		if (k < 0) {
